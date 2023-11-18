@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/ssff.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo
+{
+    width: 9.25rem;
+    height: 2.5rem;
+    cursor: pointer;
+    margin-left: 51px;
+    margin-top: 4px
+
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background-color: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px; 
+    cursor: pointer;
+}
+.language-btn
+{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 8px 30px;
+    margin-right: 18px;
+    margin-top: 5px;
+}
+.language-btn img
+{
+    width: 10px;
+    margin-left: 10px;
+}
+.header-content
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+    flex-basis: 50%;
+    padding: 0;
+    z-index: 1;
+    width: 100%;
+}
+.header-content h1
+{
+    line-height: 70px;
+    max-width: 50;
+    font-size: 42px;
+    font-weight: 900;
+    margin-left: 1px;
+    margin-top: 24px;
+    
+}
+.header-content p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 27px;
+    
+}
+.header-content h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 27px;
+}
+.language-m
+{
+    margin-right: 64px;
+    font-weight: 100;
+}
+.language-uu
+{
+    padding: 8px 15px;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.email-signup input
+{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    padding: 15px 60px;
+    background: transparent;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    border-radius: 6px;
+    border: 1px solid white;
+    font-size: 16px;
+
+}
+.email-signup button
+{
+    background: #db0001;
+    outline: 0;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 14px 35px;
+    border-radius: 6px;
+    border: 1px solid red;
+    
+    
+}
+
+
+.features
+{
+    padding: 50px 12%;
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+.row
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+
+}
+.text-col
+{
+    flex-basis: 50%;
+    margin-top: 50px;
+    
+
+}
+.img-col
+{
+    flex-basis: 50%;
+    margin-top: 20px;
+    
+}
+.img-col img
+{
+    display: block;
+    width: 90%;
+    margin: auto;
+    
+    
+}
+.features h2
+{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.features p{
+    margin-bottom: 50px;
+}
+.faq
+{
+    padding: 12px 10%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.accordian
+{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordian li
+{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordian li label
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after
+{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+transition: transform 0.5s;
+}
+input[type="radio"]
+{
+    display: none;
+}
+.accordian .content 
+{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.accordian input[type="radio"]:checked + label + .content
+{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordian input[type="radio"]:checked + label::after
+{
+    transform: rotate(135deg);
+}
+.footer
+{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+
+}
+.footer h2
+{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+.footer .col 
+{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+
+}
+.footer .col a
+{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row
+{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .language-btn
+{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+.copyright-txt
+{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.greyline
+{
+    width: 100%;
+    height: 5px;
+    color: grey;
+}
